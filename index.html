@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anand Library Patna | Self Study Centre</title>
+  <meta name="description" content="Anand Library is a dedicated self-study centre in Patna offering a clean, peaceful and comfortable study environment with flexible monthly membership shifts.">
+  <meta name="keywords" content="Anand Library, Self Study Centre Patna, Library in Patna, Study Centre Patna, Ramkrishna Nagar Library Patna">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Anand Library Patna | Self Study Centre">
+  <meta property="og:description" content="A clean environment to study. Dedicated self-study centre in Patna with flexible monthly shifts.">
+  <meta property="og:image" content="assets/images/exterior_building.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles/main.css">
+
+  <!-- Favicon Logo -->
+  <link rel="icon" type="image/png" href="assets/logo/anand_library_official_logo.png">
+
+  <!-- JSON-LD LocalBusiness Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Anand Library",
+    "description": "Self Study Centre providing a clean environment for student preparation.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Pipra Rd, West Ramkrishna Nagar, MODH, Ramkrishan Nagar, Shekhpura",
+      "addressLocality": "Patna",
+      "addressRegion": "Bihar",
+      "postalCode": "800030",
+      "addressCountry": "IN"
+    },
+    "telephone": "+917382965054",
+    "openingHours": "Mo-Su 06:00-20:00"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- =========================================================================
+       HEADER / STICKY NAVBAR
+       ========================================================================= -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <!-- Official Logo -->
+      <a href="#home" class="brand-logo-link">
+        <img src="assets/logo/anand_library_official_logo.png" alt="Anand Library Official Logo" class="brand-logo-img" style="max-height: 56px; width: auto; object-fit: contain;">
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#facilities" class="nav-link">Facilities</a></li>
+          <li><a href="#shifts" class="nav-link">Shifts</a></li>
+          <li><a href="#membership" class="nav-link">Membership</a></li>
+          <li><a href="#girls-seating" class="nav-link">Girls' Seating</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#location" class="nav-link">Location</a></li>
+        </ul>
+      </nav>
+
+      <!-- Desktop Action -->
+      <div class="nav-actions">
+        <!-- Dark Mode Toggle -->
+        <button class="dark-mode-btn" id="darkModeBtn" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <!-- Sun icon (light mode) -->
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <!-- Moon icon (dark mode) -->
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+        <a href="https://wa.me/917382965054?text=Hello%20Anand%20Library%2C%20I%20would%20like%20to%20know%20more%20about%20membership%20plans." target="_blank" class="btn btn-whatsapp btn-sm">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.572-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          WhatsApp Us
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <div class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle menu">
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav-overlay" id="mobileOverlay"></div>
+  <div class="mobile-nav-drawer" id="mobileDrawer">
+    <div>
+      <img src="assets/logo/anand_library_official_logo.png" alt="Anand Library" style="height: 48px; width: auto; margin-bottom: 24px;">
+      <ul class="mobile-nav-list">
+        <li><a href="#home" class="mobile-nav-link">Home</a></li>
+        <li><a href="#about" class="mobile-nav-link">About Us</a></li>
+        <li><a href="#facilities" class="mobile-nav-link">Facilities</a></li>
+        <li><a href="#shifts" class="mobile-nav-link">Shift Timings</a></li>
+        <li><a href="#membership" class="mobile-nav-link">Membership Plans</a></li>
+        <li><a href="#girls-seating" class="mobile-nav-link">Girls' Seating</a></li>
+        <li><a href="#gallery" class="mobile-nav-link">Photo Gallery</a></li>
+        <li><a href="#location" class="mobile-nav-link">Location & Map</a></li>
+      </ul>
+    </div>
+    <a href="https://wa.me/917382965054?text=Hello%20Anand%20Library%2C%20I%20would%20like%20to%20know%20more%20about%20membership%20plans." target="_blank" class="btn btn-whatsapp" style="width: 100%;">
+      Chat on WhatsApp
+    </a>
+  </div>
+
+  <!-- =========================================================================
+       PAGE VIEW 1: HOME PAGE
+       ========================================================================= -->
+  <div id="homeView" class="page-view">
+
+    <!-- -----------------------------------------------------------------------
+         HERO SECTION
+         ----------------------------------------------------------------------- -->
+    <section class="hero-section" id="home">
+      <div class="hero-bg-wrapper">
+        <img src="assets/images/exterior_building.jpg" alt="Anand Library Building Patna" class="hero-bg-img">
+        <div class="hero-overlay"></div>
+      </div>
+      
+      <div class="container hero-content">
+        <div class="hero-location-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          ANAND LIBRARY · PATNA
+        </div>
+        
+        <h1 class="hero-title">
+          A clean environment
+          <span>to study.</span>
+        </h1>
+        
+        <p class="hero-subtitle">
+          Anand Library is a dedicated self-study centre in Patna, designed to give students a comfortable, focused and peaceful environment for preparation.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#membership" class="btn btn-gold btn-lg">View Membership Plans</a>
+          <a href="#location" class="btn btn-secondary btn-lg" style="background: rgba(255,255,255,0.15); color: #FFF; border-color: rgba(255,255,255,0.4);">Get Directions</a>
+        </div>
+
+        <div class="hero-trust-bar">
+          <div class="trust-item">
+            <span class="trust-number">102</span>
+            <span class="trust-label">Capacity Seats</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-number">3</span>
+            <span class="trust-label">Daily Shifts</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-number">6:00 AM</span>
+            <span class="trust-label">Early Opening</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-number">Aug 2024</span>
+            <span class="trust-label">Established</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         ABOUT SECTION (With Real Interior Photo)
+         ----------------------------------------------------------------------- -->
+    <section class="section section-cream" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image-wrapper">
+            <img src="assets/images/interior_study_hall.jpg" alt="Real Interior Study Hall Anand Library Patna">
+            <div class="about-image-badge">
+              <div class="about-badge-year">Started Aug 2024</div>
+              <div class="about-badge-text">Ramkrishna Nagar, Patna</div>
+            </div>
+          </div>
+
+          <div class="about-content">
+            <div class="badge-tag badge-tag-green">About Anand Library</div>
+            <h2 class="section-title">Study with focus.<br>Prepare with confidence.</h2>
+            <p style="font-size: 1.1rem; line-height: 1.7;">
+              Started in August 2024, Anand Library was created with a simple idea — provide students with a clean, comfortable and focused environment where they can study without unnecessary distractions.
+            </p>
+            <p style="font-size: 1rem;">
+              Located on Pipra Road in West Ramkrishna Nagar, Patna, our centre offers 102 individual study desks with privacy partitions, LED lighting, power sockets, air conditioning, and a peaceful atmosphere tailored for competitive exam aspirants.
+            </p>
+
+            <div class="motto-card">
+              <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700; color: var(--color-secondary-dark); margin-bottom: 4px;">Our Core Motto</div>
+              <div class="motto-quote">"A clean environment to study."</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         FACILITIES / WHY ANAND LIBRARY
+         ----------------------------------------------------------------------- -->
+    <section class="section section-white" id="facilities">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-tag">Verified Amenities</div>
+          <h2 class="section-title">Everything you need for focused preparation.</h2>
+          <p class="section-subtitle">Thoughtfully maintained facilities designed to support long, uninterrupted study hours.</p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Feature 1 -->
+          <div class="feature-card">
+            <div class="feature-number">01</div>
+            <div class="feature-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+            </div>
+            <h3 class="feature-title">Individual Study Space</h3>
+            <p class="feature-desc">Dedicated study desks (numbered 1 to 102) designed with proper side dividers to help you maintain deep focus.</p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="feature-card">
+            <div class="feature-number">02</div>
+            <div class="feature-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <h3 class="feature-title">Comfortable Environment</h3>
+            <p class="feature-desc">A clean, organized and quiet space with ergonomic chairs engineered for extended study sessions.</p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="feature-card">
+            <div class="feature-number">03</div>
+            <div class="feature-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"/></svg>
+            </div>
+            <h3 class="feature-title">Air Conditioning & Fans</h3>
+            <p class="feature-desc">Maintained air conditioning and ceiling fans for a cool, comfortable study temperature.</p>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="feature-card">
+            <div class="feature-number">04</div>
+            <div class="feature-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <h3 class="feature-title">Power & Lighting</h3>
+            <p class="feature-desc">Individual study spaces equipped with LED lights and personal power sockets at each desk.</p>
+          </div>
+
+          <!-- Feature 5 -->
+          <div class="feature-card">
+            <div class="feature-number">05</div>
+            <div class="feature-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </div>
+            <h3 class="feature-title">Storage / Locker Facilities</h3>
+            <p class="feature-desc">Convenient storage locker facilities available above desks for members to safely keep study materials.</p>
+          </div>
+
+          <!-- Feature 6 -->
+          <div class="feature-card">
+            <div class="feature-number">06</div>
+            <div class="feature-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 class="feature-title">Dedicated Girls' Seating</h3>
+            <p class="feature-desc">A respectful, dedicated seating arrangement designed specifically for female students.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         SHIFT TIMINGS TIMELINE
+         ----------------------------------------------------------------------- -->
+    <section class="section section-cream" id="shifts">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-tag">Daily Schedule</div>
+          <h2 class="section-title">Three shifts. One focused environment.</h2>
+          <p class="section-subtitle">Select the shift timing that seamlessly fits your daily routine.</p>
+        </div>
+
+        <div class="shifts-wrapper">
+          <div class="shifts-timeline">
+            <!-- Shift 1 -->
+            <div class="shift-card">
+              <div class="shift-num">01</div>
+              <h3 class="shift-title">Morning Shift</h3>
+              <div class="shift-time">8:00 AM – 12:00 PM</div>
+              <span class="shift-price-tag">₹400 / month</span>
+            </div>
+
+            <!-- Shift 2 -->
+            <div class="shift-card">
+              <div class="shift-num">02</div>
+              <h3 class="shift-title">Afternoon Shift</h3>
+              <div class="shift-time">12:00 PM – 4:00 PM</div>
+              <span class="shift-price-tag">₹400 / month</span>
+            </div>
+
+            <!-- Shift 3 -->
+            <div class="shift-card">
+              <div class="shift-num">03</div>
+              <h3 class="shift-title">Evening Shift</h3>
+              <div class="shift-time">4:00 PM – 8:00 PM</div>
+              <span class="shift-price-tag">₹400 / month</span>
+            </div>
+          </div>
+
+          <div class="opening-banner">
+            <div class="opening-banner-text">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+              <span>Library doors open at <strong>6:00 AM</strong> for early morning study.</span>
+            </div>
+            <div style="font-size: 0.9rem; opacity: 0.9;">Closing: 8:00 PM</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         MEMBERSHIP PLANS & PRICING
+         ----------------------------------------------------------------------- -->
+    <section class="section section-white" id="membership">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-tag">Simple Monthly Pricing</div>
+          <h2 class="section-title">Choose your study schedule</h2>
+          <p class="section-subtitle">Flexible monthly memberships designed around your study routine.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Card 1: 1 Shift -->
+          <div class="pricing-card">
+            <div>
+              <div class="pricing-header">
+                <h3 class="pricing-title">1 SHIFT</h3>
+                <p class="pricing-subtitle">Choose any single 4-hour shift</p>
+              </div>
+
+              <div class="pricing-price-box">
+                <span class="pricing-currency">₹</span>
+                <span class="pricing-amount">400</span>
+                <span class="pricing-period">/ month</span>
+              </div>
+
+              <ul class="pricing-features">
+                <li class="pricing-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  8:00 AM – 12:00 PM (Shift 1)
+                </li>
+                <li class="pricing-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  12:00 PM – 4:00 PM (Shift 2)
+                </li>
+                <li class="pricing-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  4:00 PM – 8:00 PM (Shift 3)
+                </li>
+                <li class="pricing-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  Individual desk & power socket
+                </li>
+              </ul>
+            </div>
+
+            <button class="btn btn-primary" data-whatsapp-plan="1 Shift (₹400/month)">Enquire on WhatsApp</button>
+          </div>
+
+          <!-- Card 2: 2 Shifts -->
+          <div class="pricing-card featured">
+            <div class="pricing-badge">Popular Choice</div>
+            <div>
+              <div class="pricing-header">
+                <h3 class="pricing-title">2 SHIFTS</h3>
+                <p class="pricing-subtitle">Combine any two daily shifts</p>
+              </div>
+
+              <div class="pricing-price-box">
+                <span class="pricing-currency">₹</span>
+                <span class="pricing-amount">600</span>
+                <span class="pricing-period">/ month</span>
+              </div>
+
+              <ul class="pricing-features">
+                <li class="pricing-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  8 Hours of daily dedicated study
+                </li>
+                <li class="pricing-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  Choose any 2 shifts combination
+                </li>
+                <li class="pricing-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  Air conditioning & fan comfort
+                </li>
+                <li class="pricing-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  Personal locker option
+                </li>
+              </ul>
+            </div>
+
+            <button class="btn btn-gold" data-whatsapp-plan="2 Shifts (₹600/month)">Enquire on WhatsApp</button>
+          </div>
+
+          <!-- Card 3: Full Day -->
+          <div class="pricing-card featured">
+            <div class="pricing-badge">Best Value</div>
+            <div>
+              <div class="pricing-header">
+                <h3 class="pricing-title">FULL DAY</h3>
+                <p class="pricing-subtitle">Complete daily schedule access</p>
+              </div>
+
+              <div class="pricing-price-box">
+                <span class="pricing-currency">₹</span>
+                <span class="pricing-amount">800</span>
+                <span class="pricing-period">/ month</span>
+              </div>
+
+              <ul class="pricing-features">
+                <li class="pricing-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  Access from 6:00 AM to 8:00 PM
+                </li>
+                <li class="pricing-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  Full day study desk reserved
+                </li>
+                <li class="pricing-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  Uninterrupted study environment
+                </li>
+                <li class="pricing-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  Maximum savings & flexibility
+                </li>
+              </ul>
+            </div>
+
+            <button class="btn btn-primary" data-whatsapp-plan="Full Day (₹800/month)">Enquire on WhatsApp</button>
+          </div>
+        </div>
+
+        <!-- 3-Month Offer Banner -->
+        <div class="offer-banner">
+          <div class="offer-content">
+            <div class="offer-icon-box">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+            </div>
+            <div>
+              <h3 class="offer-title">PAY FOR 3 MONTHS & SAVE 10%</h3>
+              <p class="offer-subtitle">Get an instant 10% discount on total fee when you pay your membership for three months upfront.</p>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-sm" data-whatsapp-plan="3-Month Discount Offer">Claim Offer on WhatsApp</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         GIRLS' SEATING SECTION (With Real Interior Cubicles Photo)
+         ----------------------------------------------------------------------- -->
+    <section class="section section-cream" id="girls-seating">
+      <div class="container">
+        <div class="girls-seating-card">
+          <div class="girls-seating-content">
+            <div class="girls-tag">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Dedicated Area
+            </div>
+            <h2 class="girls-seating-title">A comfortable space for every student.</h2>
+            <p style="font-size: 1.1rem; line-height: 1.7; color: var(--color-text-muted);">
+              Anand Library provides a dedicated seating arrangement for girls, creating a comfortable, peaceful, and focused study environment.
+            </p>
+            <p style="font-size: 0.98rem; color: var(--color-text-muted);">
+              Designed to ensure that female aspirants feel completely comfortable and at ease during long study hours.
+            </p>
+            <div style="margin-top: 10px;">
+              <a href="https://wa.me/917382965054?text=Hello%20Anand%20Library%2C%20I%20would%20like%20to%20know%20about%20the%20girls%20seating%20arrangement." target="_blank" class="btn btn-secondary btn-sm">Enquire About Girls' Seating</a>
+            </div>
+          </div>
+
+          <div class="girls-seating-image">
+            <img src="assets/images/interior_cubicles.jpg" alt="Dedicated Girls Seating Area Anand Library Patna">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         EDITORIAL GALLERY PREVIEW (With Real Exterior & Interior Photos)
+         ----------------------------------------------------------------------- -->
+    <section class="section section-white" id="gallery">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-tag">Real Photography</div>
+          <h2 class="section-title">Inside Anand Library</h2>
+          <p class="section-subtitle">Take a look at the space we've created for focused, uninterrupted study.</p>
+        </div>
+
+        <div class="editorial-gallery">
+          <!-- Featured Large Image -->
+          <div class="gallery-featured-item trigger-open-lightbox" data-index="1">
+            <img src="assets/images/interior_study_hall.jpg" alt="Anand Library Main Study Hall">
+            <div class="gallery-item-overlay">
+              <div>
+                <div class="gallery-item-title">Main Study Hall & Numbered Desks</div>
+                <div class="gallery-item-category">Ramkrishna Nagar, Patna</div>
+              </div>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFF" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </div>
+          </div>
+
+          <!-- Side Grid -->
+          <div class="gallery-side-grid">
+            <div class="gallery-sub-item trigger-open-lightbox" data-index="0">
+              <img src="assets/images/exterior_building.jpg" alt="Building Exterior Anand Library">
+              <div class="gallery-item-overlay">
+                <div>
+                  <div class="gallery-item-title">Building Exterior</div>
+                  <div class="gallery-item-category">Pipra Road</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery-sub-item trigger-open-lightbox" data-index="2">
+              <img src="assets/images/interior_desks_lockers.jpg" alt="Study Cubicles and Lockers Anand Library">
+              <div class="gallery-item-overlay">
+                <div>
+                  <div class="gallery-item-title">Desks & Lockers</div>
+                  <div class="gallery-item-category">102 Seat Capacity</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery-sub-item trigger-open-lightbox" data-index="3">
+              <img src="assets/images/interior_cubicles.jpg" alt="AC Study Area Anand Library">
+              <div class="gallery-item-overlay">
+                <div>
+                  <div class="gallery-item-title">Air Conditioned Area</div>
+                  <div class="gallery-item-category">Quiet Study Zone</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery-sub-item trigger-open-lightbox" data-index="4">
+              <img src="assets/images/entrance_facade.jpg" alt="Main Entrance Anand Library">
+              <div class="gallery-item-overlay">
+                <div>
+                  <div class="gallery-item-title">Main Entrance</div>
+                  <div class="gallery-item-category">Ground Floor</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+          <a href="#gallery" class="btn btn-primary" onclick="window.location.hash='#gallery'">Explore Full Gallery →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         TESTIMONIALS (PLACEHOLDERS)
+         ----------------------------------------------------------------------- -->
+    <section class="section section-cream" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-tag">Student Experience</div>
+          <h2 class="section-title">What our members say</h2>
+          <p class="section-subtitle">Real feedback from students preparing for competitive exams at Anand Library.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Placeholder 1 -->
+          <div class="testimonial-card">
+            <p class="testimonial-quote">
+              "The environment is extremely quiet and peaceful. Desk dividers give great privacy for studying long hours."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">AL</div>
+              <div>
+                <div class="author-name">BPSC Aspirant</div>
+                <div class="author-role">Regular Member (Shift 1 & 2)</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Placeholder 2 -->
+          <div class="testimonial-card">
+            <p class="testimonial-quote">
+              "Cleanliness and proper lighting make a big difference. The girls' seating arrangement is very comfortable."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">AL</div>
+              <div>
+                <div class="author-name">SSC Aspirant</div>
+                <div class="author-role">Full Day Member</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Placeholder 3 -->
+          <div class="testimonial-card">
+            <p class="testimonial-quote">
+              "Affordable monthly fees with proper AC and fan setup. It is a genuine study centre in Ramkrishna Nagar."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">AL</div>
+              <div>
+                <div class="author-name">Banking Aspirant</div>
+                <div class="author-role">Shift 3 Member</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="google-review-note">
+          📌 <em>Official Google Reviews & ratings link will be connected here soon. Stay tuned!</em>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         LOCATION & GOOGLE MAPS
+         ----------------------------------------------------------------------- -->
+    <section class="section section-white" id="location">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-tag">Visit Us</div>
+          <h2 class="section-title">Find Anand Library</h2>
+          <p class="section-subtitle">Conveniently located on Pipra Road in West Ramkrishna Nagar, Patna.</p>
+        </div>
+
+        <div class="location-grid">
+          <!-- Info Card -->
+          <div class="location-info-card">
+            <div>
+              <h3 style="font-size: 1.5rem; font-weight: 800; color: var(--color-primary-dark); margin-bottom: 8px;">Anand Library</h3>
+              <p style="font-size: 0.95rem; color: var(--color-secondary-dark); font-weight: 700;">Self Study Centre · Patna</p>
+
+              <ul class="location-details-list">
+                <li class="location-item">
+                  <div class="location-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  </div>
+                  <div>
+                    <div class="location-text-title">Address</div>
+                    <div class="location-text-val">
+                      Pipra Rd, West Ramkrishna Nagar, MODH,<br>
+                      Ramkrishan Nagar, Shekhpura,<br>
+                      Patna, Bihar 800030
+                    </div>
+                  </div>
+                </li>
+
+                <li class="location-item">
+                  <div class="location-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  </div>
+                  <div>
+                    <div class="location-text-title">Phone & WhatsApp</div>
+                    <div class="location-text-val">
+                      <a href="tel:7382965054" style="text-decoration: underline; font-weight: 700; color: var(--color-primary);">7382965054</a> &nbsp;|&nbsp; 
+                      <a href="tel:6900666172" style="text-decoration: underline;">6900666172</a>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="location-item">
+                  <div class="location-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                  </div>
+                  <div>
+                    <div class="location-text-title">Opening Hours</div>
+                    <div class="location-text-val">6:00 AM – 8:00 PM (All Days)</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <a href="https://www.google.com/maps/search/?api=1&query=Anand+Library+Pipra+Rd+West+Ramkrishna+Nagar+Patna+Bihar+800030" target="_blank" class="btn btn-primary" style="width: 100%;">
+              Get Directions on Google Maps
+            </a>
+          </div>
+
+          <!-- Google Maps Iframe -->
+          <div class="map-wrapper">
+            <iframe class="map-iframe" src="https://maps.google.com/maps?q=Pipra%20Rd%2C%20West%20Ramkrishna%20Nagar%2C%20Ramkrishan%20Nagar%2C%20Patna%2C%20Bihar%20800030&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         BOTTOM WHATSAPP CTA BANNER
+         ----------------------------------------------------------------------- -->
+    <section class="section section-cream">
+      <div class="container">
+        <div class="cta-banner">
+          <div class="cta-banner-content">
+            <h2 class="cta-banner-title">Ready to find your study space?</h2>
+            <p class="cta-banner-desc">Choose your preferred shift and get in touch with Anand Library today.</p>
+            <a href="https://wa.me/917382965054?text=Hello%20Anand%20Library%2C%20I%20would%20like%20to%20know%20more%20about%20the%20membership%20plans." target="_blank" class="btn btn-whatsapp btn-lg">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.572-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+              Chat on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- End #homeView -->
+
+
+  <!-- =========================================================================
+       PAGE VIEW 2: DEDICATED FULL GALLERY PAGE (#gallery VIEW)
+       ========================================================================= -->
+  <div id="galleryView" class="page-view hidden" style="padding-top: calc(var(--header-height) + 40px); min-height: 80vh;">
+    <div class="container section">
+      <div class="section-header">
+        <div class="badge-tag">Photo Collection</div>
+        <h1 class="section-title">Inside Anand Library</h1>
+        <p class="section-subtitle">Explore our study spaces, seating areas and environment at Anand Library Patna.</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="gallery-filters">
+        <button class="filter-btn active" data-filter="all">All Photos</button>
+        <button class="filter-btn" data-filter="exterior">Building Exterior</button>
+        <button class="filter-btn" data-filter="entrance">Entrance & Facilities</button>
+        <button class="filter-btn" data-filter="study">Study Area</button>
+      </div>
+
+      <!-- Masonry Grid Container -->
+      <div class="gallery-masonry" id="galleryMasonry">
+        <!-- Rendered dynamically by js/app.js -->
+      </div>
+    </div>
+  </div><!-- End #galleryView -->
+
+
+  <!-- =========================================================================
+       LIGHTBOX MODAL OVERLAY
+       ========================================================================= -->
+  <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-hidden="true">
+    <div class="lightbox-close" id="lightboxClose" title="Close Lightbox">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </div>
+
+    <div class="lightbox-nav-btn lightbox-prev" id="lightboxPrev" title="Previous Image">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+    </div>
+
+    <div class="lightbox-nav-btn lightbox-next" id="lightboxNext" title="Next Image">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+    </div>
+
+    <div class="lightbox-content">
+      <img src="" alt="" class="lightbox-img" id="lightboxImg">
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+      <div class="lightbox-counter" id="lightboxCounter"></div>
+    </div>
+  </div>
+
+
+  <!-- =========================================================================
+       FLOATING QUICK WHATSAPP BUTTON
+       ========================================================================= -->
+  <a href="https://wa.me/917382965054?text=Hello%20Anand%20Library%2C%20I%20would%20like%20to%20know%20more%20about%20membership%20plans." target="_blank" class="floating-whatsapp-btn" title="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.572-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand -->
+        <div class="footer-brand">
+          <img src="assets/logo/anand_library_official_logo.png" alt="Anand Library Patna" class="footer-logo-img" style="width: 70px; height: 70px; object-fit: contain; display: block; filter: brightness(0) invert(1);">
+          <p class="footer-motto">"A clean environment to study."</p>
+          <p style="font-size: 0.875rem; color: rgba(255,255,255,0.7); max-width: 320px;">
+            A dedicated self-study centre in Patna offering a peaceful and comfortable atmosphere for competitive exam preparation.
+          </p>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div>
+          <div class="footer-col-title">Quick Links</div>
+          <ul class="footer-links-list">
+            <li><a href="#home" class="footer-link">Home</a></li>
+            <li><a href="#about" class="footer-link">About Us</a></li>
+            <li><a href="#facilities" class="footer-link">Facilities</a></li>
+            <li><a href="#shifts" class="footer-link">Shift Timings</a></li>
+            <li><a href="#membership" class="footer-link">Membership Plans</a></li>
+            <li><a href="#gallery" class="footer-link">Photo Gallery</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Contact Info -->
+        <div>
+          <div class="footer-col-title">Contact Us</div>
+          <ul class="footer-links-list">
+            <li class="footer-link">💬 WhatsApp: <a href="https://wa.me/917382965054" target="_blank" style="color: #25D366; font-weight: 700;">7382965054</a></li>
+            <li class="footer-link">📞 Phone: <a href="tel:7382965054" style="color: inherit;">7382965054</a></li>
+            <li class="footer-link">📞 Alt Phone: <a href="tel:6900666172" style="color: inherit;">6900666172</a></li>
+            <li class="footer-link">📸 Instagram: <a href="https://www.instagram.com/library.anand?igsh=a21iYmVuM21sanBy" target="_blank" style="color: #E1306C; font-weight: 600;">@library.anand</a></li>
+            <li class="footer-link">🕒 Open: 6:00 AM – 8:00 PM</li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Address & Social -->
+        <div>
+          <div class="footer-col-title">Location</div>
+          <p class="footer-link" style="line-height: 1.6; margin-bottom: 16px;">
+            Pipra Rd, West Ramkrishna Nagar, MODH, Ramkrishan Nagar, Shekhpura, Patna, Bihar 800030
+          </p>
+          <div class="social-links">
+            <a href="https://wa.me/917382965054" target="_blank" class="social-icon-btn" title="WhatsApp">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.572-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/library.anand?igsh=a21iYmVuM21sanBy" target="_blank" class="social-icon-btn" title="Follow us on Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://www.facebook.com/share/1C5Du1a6i6/" class="social-icon-btn" title="Facebook (Official link coming soon)">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <div>&copy; 2026 Anand Library. All rights reserved. Self Study Centre · Patna, Bihar.</div>
+        <div>Motto: "A clean environment to study."</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- App Script -->
+  <script src="js/app.js"></script>
+</body>
+</html>
